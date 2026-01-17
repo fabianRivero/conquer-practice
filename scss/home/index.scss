@@ -1,0 +1,232 @@
+@use "../breakpoints" as *;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -18px;
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: 100vh;
+        gap: 30px;
+        padding: 0px 10px;
+        
+        .home-image {
+            width: 90vw;
+            max-width: 500px;
+        }    
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            h1 {
+                margin-top: -30px;
+                text-align: center;
+            }   
+        }
+    }
+
+    .courses, .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 30px;
+        width: 90vw;
+        margin-bottom: 9vh;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            li {
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                    background-color: rgb(235, 235, 235);
+                    padding: 30px;
+                    border-radius: 10px;
+                    img {
+                        width: 250px;
+                    }
+                    
+                    h3 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        a {
+            background-color: grey;
+            padding: 8px 13px;
+            color: white;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: rgba(128, 128, 128, 0.70);
+            }
+        }
+    }
+
+    @include breakpoint($bp-smv) {
+        .introduction {
+            height: auto;
+            margin-bottom: 7vh;
+            
+            .home-image {
+                width: 85vw;
+            }        
+        }
+
+        .courses, .blogs {
+            padding: 10px 40px;
+            gap: 30px;
+            width: 85vw;
+            margin-bottom: 9vh;
+
+            ul {
+                li {
+                    article {
+                        padding: 35px 50px;
+                        border-radius: 10px;
+                        img {
+                            width: 300px;
+                        }
+                        
+                        h3 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint($bp-bmv) {
+
+        .introduction {
+            width: 80vw;
+        }
+
+        .courses, .blogs {
+            padding: 0px 50px;
+
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                li {
+                    article {
+                        padding: 25px 30px;
+                        height: 320px;
+                        img {
+                            width: 210px;
+                        }
+                        
+                        h3 {
+                            font-size: 14px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint($bp-tb) {
+        align-items: start;
+
+        .introduction {
+            flex-direction: row-reverse;
+            width: auto;
+            height: 100vh;
+            gap: 50px;
+            padding: 0px 80px;
+
+            div {
+                align-items: start;
+            }
+        }
+
+        .courses, .blogs {
+            width: 100%;
+            padding: 0px 50px;
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+            }
+        }
+    }
+
+    @include breakpoint($bp-lp) {
+        .courses, .blogs {
+            padding: 0px 60px;
+            ul {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }    
+    }
+
+    @include breakpoint($bp-bmon) {
+
+        .introduction {
+            height: 100vh;           
+            gap: 350px;
+            padding: 0px 100px;
+            .home-image {
+                max-width: 700px;
+            }    
+            
+            div {
+                width: 500px;
+                h1 {
+                    text-align: center;
+                }   
+            }
+        }
+
+        .courses, .blogs {
+            padding: 0px 100px;
+            ul {
+                li {
+                    height: 360px;
+                    img {
+                        width: 280px;
+                    }
+                    
+                    h3 {
+                        text-align: center;
+                        width: 300px;
+                        font-size: 17px;
+                    }
+
+                    p {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}    
+    

@@ -1,0 +1,123 @@
+.courses-body .courses {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+.courses-body .courses h1 {
+  margin-bottom: 30px;
+}
+.courses-body .courses ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.courses-body .courses ul li article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+  border-radius: 10px;
+}
+.courses-body .courses ul li article img {
+  width: 250px;
+}
+.courses-body .courses ul li article h2 {
+  font-size: 18px;
+}
+.courses-body .courses ul li article p {
+  font-size: 13px;
+}
+.courses-body .courses ul li article a {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.courses-body .courses ul li article a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .courses-body .courses article {
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+  .courses-body .courses article img {
+    width: 300px;
+  }
+  .courses-body .courses article h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  .courses-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .courses-body .courses {
+    flex: 1;
+    padding: 0px 50px;
+  }
+  .courses-body .courses ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .courses-body .courses ul li article {
+    padding: 25px 30px;
+    height: 400px;
+  }
+  .courses-body .courses ul li article img {
+    width: 210px;
+  }
+  .courses-body .courses ul li article h2 {
+    font-size: 16px;
+  }
+  .courses-body .courses ul li article p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .courses-body .courses {
+    width: 100%;
+  }
+  .courses-body .courses ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .courses-body .courses {
+    padding: 0px 60px;
+  }
+  .courses-body .courses ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .courses-body .courses {
+    padding: 0px 100px;
+  }
+  .courses-body .courses ul li {
+    height: 360px;
+  }
+  .courses-body .courses ul li img {
+    width: 280px;
+  }
+  .courses-body .courses ul li h3 {
+    text-align: center;
+    width: 300px;
+    font-size: 17px;
+  }
+  .courses-body .courses ul li p {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=courses.css.map */

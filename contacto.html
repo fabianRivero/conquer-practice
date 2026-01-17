@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>contacto</title>
+</head>
+<body class="contact-body">
+    <header>
+        <a href="index.html"><img src="img/logo-conquerblocks-color.png" alt="logo"></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quienes somos.html">Quienes somos</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="blog.html">Blog</a>
+            <a href="registro.html">Registro</a>
+            <a href="login.html">Log in</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="contact">
+        <div class="first">
+            <h1>¿Tienes Preguntas? ¡Contáctanos!</h1>
+
+            <p>Si tienes alguna pregunta sobre el contenido, la inscripción o cualquier otro tema relacionado con tu experiencia de aprendizaje, no dudes en ponerte en contacto con nosotros. Nuestro equipo de soporte estará encantado de ayudarte.</p>
+            <div class="directions">
+                <span>Correo Electrónico: correoelectronico@mail.com</span>
+                <span>Teléfono: 1234567890</span>
+                <span>Horario de Atención: Lunes a Viernes, de 09:00 - 17:00</span>
+            </div>
+            <p>Si tienes una consulta, podemos responderte si llenas el siguiente formulario.</p>
+        </div>
+    
+    <form action="/#" method="post">
+        <div class="field">
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" placeholder=" "/>
+        </div>
+
+        <div class="field">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" placeholder=" "/>
+        </div>
+        
+        <div class="field">
+            <label for="motivo">Motivo de tu consulta:</label>
+            <select name="motivo" id="motivo">
+                <option value="descuentos">Descuentos</option>
+                <option value="reclamos">Reclamos</option>
+                <option value="bugs">Bugs</option>
+                <option value="otros">Otro asunto</option>
+            </select>
+        </div>    
+        
+        <div class="field">
+            <label for="consulta">describe tu consulta:</label>
+            <textarea name="consulta" id="consulta" rows="4" cols="50" placeholder=" "></textarea>
+        </div>
+        
+        <button type="submit">Enviar</button>
+      </form>
+
+    </main>
+
+<footer>
+    <p>Conquer Blocks 2026 todos los derechos reservados</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+$bp-smv: 360px;
+$bp-bmv: 576px;
+$bp-tb: 992px;
+$bp-lp: 1200px;
+$bp-bmon: 1400px;
+
+@mixin breakpoint($bp) {
+  @media (min-width: $bp) { @content; }
+}

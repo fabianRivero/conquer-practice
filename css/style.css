@@ -1,0 +1,1168 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -18px;
+}
+main .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  gap: 30px;
+  padding: 0px 10px;
+}
+main .introduction .home-image {
+  width: 90vw;
+  max-width: 500px;
+}
+main .introduction div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .introduction div h1 {
+  margin-top: -30px;
+  text-align: center;
+}
+main .courses, main .blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 30px;
+  width: 90vw;
+  margin-bottom: 9vh;
+}
+main .courses ul, main .blogs ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .courses ul li article, main .blogs ul li article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+  border-radius: 10px;
+}
+main .courses ul li article img, main .blogs ul li article img {
+  width: 250px;
+}
+main .courses ul li article h3, main .blogs ul li article h3 {
+  font-size: 16px;
+}
+main .courses ul li article p, main .blogs ul li article p {
+  font-size: 13px;
+}
+main .courses a, main .blogs a {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+main .courses a:hover, main .blogs a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  main .introduction {
+    height: auto;
+    margin-bottom: 7vh;
+  }
+  main .introduction .home-image {
+    width: 85vw;
+  }
+  main .courses, main .blogs {
+    padding: 10px 40px;
+    gap: 30px;
+    width: 85vw;
+    margin-bottom: 9vh;
+  }
+  main .courses ul li article, main .blogs ul li article {
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+  main .courses ul li article img, main .blogs ul li article img {
+    width: 300px;
+  }
+  main .courses ul li article h3, main .blogs ul li article h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  main .introduction {
+    width: 80vw;
+  }
+  main .courses, main .blogs {
+    padding: 0px 50px;
+  }
+  main .courses ul, main .blogs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  main .courses ul li article, main .blogs ul li article {
+    padding: 25px 30px;
+    height: 320px;
+  }
+  main .courses ul li article img, main .blogs ul li article img {
+    width: 210px;
+  }
+  main .courses ul li article h3, main .blogs ul li article h3 {
+    font-size: 14px;
+  }
+  main .courses ul li article p, main .blogs ul li article p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    align-items: start;
+  }
+  main .introduction {
+    flex-direction: row-reverse;
+    width: auto;
+    height: 100vh;
+    gap: 50px;
+    padding: 0px 80px;
+  }
+  main .introduction div {
+    align-items: start;
+  }
+  main .courses, main .blogs {
+    width: 100%;
+    padding: 0px 50px;
+  }
+  main .courses ul, main .blogs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  main .courses, main .blogs {
+    padding: 0px 60px;
+  }
+  main .courses ul, main .blogs ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  main .introduction {
+    height: 100vh;
+    gap: 350px;
+    padding: 0px 100px;
+  }
+  main .introduction .home-image {
+    max-width: 700px;
+  }
+  main .introduction div {
+    width: 500px;
+  }
+  main .introduction div h1 {
+    text-align: center;
+  }
+  main .courses, main .blogs {
+    padding: 0px 100px;
+  }
+  main .courses ul li, main .blogs ul li {
+    height: 360px;
+  }
+  main .courses ul li img, main .blogs ul li img {
+    width: 280px;
+  }
+  main .courses ul li h3, main .blogs ul li h3 {
+    text-align: center;
+    width: 300px;
+    font-size: 17px;
+  }
+  main .courses ul li p, main .blogs ul li p {
+    width: 300px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 0px 20px 0px #bebebe;
+}
+header img {
+  width: 130px;
+  cursor: pointer;
+}
+header .menu-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  z-index: 2;
+}
+header .menu-btn:hover > div {
+  background-color: rgb(148, 148, 148);
+}
+header .menu-btn div {
+  width: 21px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: black;
+}
+header #menu-toggle {
+  display: none;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  right: 0;
+  background: #e4e4e4;
+  flex-direction: column;
+  display: none;
+  z-index: 1;
+  padding: 20px 0px;
+  padding-top: 50px;
+  gap: 5px;
+}
+header nav a {
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  width: 90%;
+  border-top: 1px solid rgb(148, 148, 148);
+  padding: 7px 0;
+}
+header nav a:hover {
+  background-color: rgba(148, 148, 148, 0.5);
+}
+header #menu-toggle:checked + .menu-btn + nav {
+  display: flex;
+}
+@media (min-width: 360px) {
+  header {
+    padding: 20px 40px;
+  }
+  header img {
+    width: 150px;
+  }
+  header nav {
+    width: 200px;
+    padding: 20px 10px;
+    padding-top: 65px;
+  }
+}
+@media (min-width: 992px) {
+  header .menu-btn {
+    display: none;
+  }
+  header nav {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    gap: 40px;
+  }
+  header nav a {
+    width: auto;
+    text-align: start;
+    border-top: 0px;
+  }
+  header nav a:hover {
+    background-color: #FFFFFF;
+    color: rgba(54, 54, 54, 0.7);
+  }
+}
+
+footer {
+  padding: 20px 30px;
+  box-shadow: 0px 0px 20px 0px #bebebe;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  font-size: 10px;
+}
+@media (min-width: 360px) {
+  footer p {
+    font-size: 15px;
+  }
+}
+
+.about {
+  margin-top: 20px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.about div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.about div img {
+  width: 100%;
+  max-height: 500px;
+}
+.about .team {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.about .team h2 {
+  text-align: center;
+}
+.about .team .teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about .team .teacher figure img {
+  width: 150px;
+  max-height: 200px;
+}
+@media (min-width: 360px) {
+  .about {
+    padding: 0px 25px;
+  }
+  .about div img {
+    width: auto;
+    max-width: 400px;
+    max-height: 420px;
+  }
+  .about .team .teacher p {
+    width: 300px;
+  }
+}
+@media (min-width: 576px) {
+  .about {
+    padding: 0px 30px;
+  }
+  .about div img {
+    width: auto;
+    max-width: 400px;
+    max-height: 420px;
+  }
+  .about .team .teacher p {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .about {
+    padding: 0px 50px;
+    text-align: start;
+  }
+  .about div img {
+    width: auto;
+    max-width: 400px;
+    max-height: 200px;
+  }
+  .about .about1 {
+    flex-direction: row;
+    align-items: center;
+  }
+  .about .about2 {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .about .team {
+    width: 100%;
+  }
+  .about .team .teacher-list {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about .team .teacher-list .teacher figure img {
+    width: 110px;
+    max-height: 150px;
+  }
+  .about .team .teacher-list .teacher p {
+    width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    padding: 0px 250px;
+  }
+}
+@media (min-width: 1400px) {
+  .about {
+    padding: 0px 300px;
+  }
+}
+
+.courses-body .courses {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+.courses-body .courses h1 {
+  margin-bottom: 30px;
+}
+.courses-body .courses ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.courses-body .courses ul li article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+  border-radius: 10px;
+}
+.courses-body .courses ul li article img {
+  width: 250px;
+}
+.courses-body .courses ul li article h2 {
+  font-size: 18px;
+}
+.courses-body .courses ul li article p {
+  font-size: 13px;
+}
+.courses-body .courses ul li article a {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.courses-body .courses ul li article a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .courses-body .courses article {
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+  .courses-body .courses article img {
+    width: 300px;
+  }
+  .courses-body .courses article h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  .courses-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .courses-body .courses {
+    flex: 1;
+    padding: 0px 50px;
+  }
+  .courses-body .courses ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .courses-body .courses ul li article {
+    padding: 25px 30px;
+    height: 400px;
+  }
+  .courses-body .courses ul li article img {
+    width: 210px;
+  }
+  .courses-body .courses ul li article h2 {
+    font-size: 16px;
+  }
+  .courses-body .courses ul li article p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .courses-body .courses {
+    width: 100%;
+  }
+  .courses-body .courses ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .courses-body .courses {
+    padding: 0px 60px;
+  }
+  .courses-body .courses ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .courses-body .courses {
+    padding: 0px 100px;
+  }
+  .courses-body .courses ul li {
+    height: 360px;
+  }
+  .courses-body .courses ul li img {
+    width: 280px;
+  }
+  .courses-body .courses ul li h3 {
+    text-align: center;
+    width: 300px;
+    font-size: 17px;
+  }
+  .courses-body .courses ul li p {
+    width: 300px;
+  }
+}
+
+.course-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.course-body .course {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 30px;
+  padding: 0 20px;
+}
+.course-body .course img {
+  width: 100%;
+}
+.course-body .course .description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.course-body .course .description h1 {
+  font-size: 28px;
+}
+.course-body .course .description a {
+  align-self: center;
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.course-body .course .description a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .course-body .course {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 576px) {
+  .course-body .course {
+    padding: 0 70px;
+  }
+}
+@media (min-width: 992px) {
+  .course-body .course {
+    padding: 0 40px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .course-body .course img {
+    max-width: 45vw;
+  }
+  .course-body .course .description {
+    max-width: 45vw;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .course-body .course {
+    justify-content: space-around;
+  }
+  .course-body .course .description {
+    gap: 25px;
+  }
+}
+@media (min-width: 1400px) {
+  .course-body .course {
+    padding: 0 50px;
+  }
+  .course-body .course img {
+    max-width: 47vw;
+  }
+  .course-body .course .description {
+    max-width: 47vw;
+  }
+}
+
+.blog-menu-body .blog-menu {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+.blog-menu-body .blog-menu h1 {
+  margin-bottom: 30px;
+}
+.blog-menu-body .blog-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-menu-body .blog-menu ul li article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+  border-radius: 10px;
+}
+.blog-menu-body .blog-menu ul li article img {
+  width: 250px;
+}
+.blog-menu-body .blog-menu ul li article h2 {
+  font-size: 18px;
+}
+.blog-menu-body .blog-menu ul li article p {
+  font-size: 13px;
+}
+.blog-menu-body .blog-menu ul li article a {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.blog-menu-body .blog-menu ul li article a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .blog-menu-body .blog-menu article {
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+  .blog-menu-body .blog-menu article img {
+    width: 300px;
+  }
+  .blog-menu-body .blog-menu article h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  .blog-menu-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-menu-body .blog-menu {
+    flex: 1;
+    padding: 0px 50px;
+  }
+  .blog-menu-body .blog-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .blog-menu-body .blog-menu ul li article {
+    padding: 25px 30px;
+    height: 400px;
+  }
+  .blog-menu-body .blog-menu ul li article img {
+    width: 210px;
+  }
+  .blog-menu-body .blog-menu ul li article h2 {
+    font-size: 16px;
+  }
+  .blog-menu-body .blog-menu ul li article p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .blog-menu-body .blog-menu {
+    width: 100%;
+  }
+  .blog-menu-body .blog-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog-menu-body .blog-menu {
+    padding: 0px 60px;
+  }
+  .blog-menu-body .blog-menu ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .blog-menu-body .blog-menu {
+    padding: 0px 100px;
+  }
+  .blog-menu-body .blog-menu ul li {
+    height: 360px;
+  }
+  .blog-menu-body .blog-menu ul li img {
+    width: 280px;
+  }
+  .blog-menu-body .blog-menu ul li h3 {
+    text-align: center;
+    width: 300px;
+    font-size: 17px;
+  }
+  .blog-menu-body .blog-menu ul li p {
+    width: 300px;
+  }
+}
+
+.blog-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.blog-body .blog {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 30px;
+  padding: 0 20px;
+}
+.blog-body .blog img {
+  width: 100%;
+}
+.blog-body .blog .description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.blog-body .blog .description h1 {
+  font-size: 28px;
+}
+.blog-body .blog .description a {
+  align-self: center;
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.blog-body .blog .description a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .blog-body .blog {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 576px) {
+  .blog-body .blog {
+    padding: 0 70px;
+  }
+}
+@media (min-width: 992px) {
+  .blog-body .blog {
+    padding: 0 120px;
+    gap: 40px;
+  }
+  .blog-body .blog .description {
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog-body .blog {
+    padding: 0 150px;
+  }
+  .blog-body .blog .description {
+    gap: 25px;
+  }
+}
+@media (min-width: 1400px) {
+  .blog-body .blog {
+    padding: 0 200px;
+  }
+}
+
+.register-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.register-body .register {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.register-body .register form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.register-body .register form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.register-body .register form ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.register-body .register form ul li label {
+  color: grey;
+}
+.register-body .register form ul li input {
+  height: 25px;
+  font-size: 17px;
+}
+.register-body .register form ul li input, .register-body .register form ul li textarea {
+  border: 1px solid grey;
+}
+.register-body .register form ul li input:focus, .register-body .register form ul li textarea:focus {
+  outline: none;
+  border: 2px solid #5a5a5a;
+}
+.register-body .register form ul li input:valid:not(:placeholder-shown), .register-body .register form ul li textarea:valid:not(:placeholder-shown) {
+  border: 1px solid #4EE1A0;
+}
+.register-body .register form ul li input:invalid:not(:placeholder-shown), .register-body .register form ul li textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid #FF6F5B;
+  background-image: url("../icons/attention-sign.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+.register-body .register form ul li:has(input:invalid:not(:placeholder-shown))::after {
+  content: "Formato incorrecto";
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  font-size: 12px;
+  color: #FF6F5B;
+}
+.register-body .register form ul li input[type=file] {
+  font-size: 10px;
+  border: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.register-body .register form ul li input[type=file]:valid:not(:placeholder-shown), .register-body .register form ul li input[type=file]:invalid:not(:placeholder-shown) {
+  border: none;
+}
+.register-body .register form button {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.register-body .register form button:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .register-body .register {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 576px) {
+  .register-body .register {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 992px) {
+  .register-body .register form {
+    width: 60%;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .register-body .register form {
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) {
+  .register-body .register form {
+    width: 30%;
+  }
+}
+
+.login-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.login-body .login {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.login-body .login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.login-body .login form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.login-body .login form ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.login-body .login form ul li label {
+  color: grey;
+}
+.login-body .login form ul li input {
+  height: 25px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+.login-body .login form ul li input:focus {
+  outline: none;
+  border: 2px solid #5a5a5a;
+}
+.login-body .login form ul li input:valid:not(:placeholder-shown) {
+  border: 1px solid #4EE1A0;
+}
+.login-body .login form ul li input:invalid:not(:placeholder-shown) {
+  border: 1px solid #FF6F5B;
+  background-image: url("../icons/attention-sign.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+.login-body .login form ul li:has(input:invalid:not(:placeholder-shown))::after {
+  content: "Formato incorrecto";
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  font-size: 12px;
+  color: #FF6F5B;
+}
+.login-body .login form button {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.login-body .login form button:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .login-body .login {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 576px) {
+  .login-body .login {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 992px) {
+  .login-body .login form {
+    width: 50%;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .login-body .login form {
+    width: 30%;
+  }
+}
+@media (min-width: 1400px) {
+  .login-body .login form {
+    width: 20%;
+  }
+}
+
+.contact-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contact-body .contact {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: self-start;
+}
+.contact-body .contact .first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-body .contact .directions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-body .contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-body .contact form .field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.contact-body .contact form .field input {
+  height: 25px;
+  font-size: 17px;
+}
+.contact-body .contact form .field input, .contact-body .contact form .field textarea {
+  border: 1px solid grey;
+}
+.contact-body .contact form .field input:focus, .contact-body .contact form .field textarea:focus {
+  outline: none;
+  border: 2px solid #5a5a5a;
+}
+.contact-body .contact form .field input:valid:not(:placeholder-shown), .contact-body .contact form .field textarea:valid:not(:placeholder-shown) {
+  border: 1px solid #4EE1A0;
+}
+.contact-body .contact form .field input:invalid:not(:placeholder-shown), .contact-body .contact form .field textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid #FF6F5B;
+  background-image: url("../icons/attention-sign.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+.contact-body .contact form .field:has(input:invalid:not(:placeholder-shown))::after {
+  content: "Formato incorrecto";
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  font-size: 12px;
+  color: #FF6F5B;
+}
+.contact-body .contact form .field select {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.contact-body .contact form .field select option:hover {
+  color: white;
+}
+.contact-body .contact form .field select:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
+}
+.contact-body .contact form button {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.contact-body .contact form button:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .contact-body .contact {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 576px) {
+  .contact-body .contact {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 992px) {
+  .contact-body .contact {
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-body .contact form {
+    width: 60%;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-body .contact form {
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-body .contact form {
+    width: 30%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

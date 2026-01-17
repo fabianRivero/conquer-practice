@@ -1,0 +1,70 @@
+.blog-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.blog-body .blog {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 30px;
+  padding: 0 20px;
+}
+.blog-body .blog img {
+  width: 100%;
+}
+.blog-body .blog .description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.blog-body .blog .description h1 {
+  font-size: 28px;
+}
+.blog-body .blog .description a {
+  align-self: center;
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.blog-body .blog .description a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .blog-body .blog {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 576px) {
+  .blog-body .blog {
+    padding: 0 70px;
+  }
+}
+@media (min-width: 992px) {
+  .blog-body .blog {
+    padding: 0 120px;
+    gap: 40px;
+  }
+  .blog-body .blog .description {
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog-body .blog {
+    padding: 0 150px;
+  }
+  .blog-body .blog .description {
+    gap: 25px;
+  }
+}
+@media (min-width: 1400px) {
+  .blog-body .blog {
+    padding: 0 200px;
+  }
+}
+
+/*# sourceMappingURL=blogs.css.map */

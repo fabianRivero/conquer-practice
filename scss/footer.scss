@@ -1,0 +1,19 @@
+@use "breakpoints" as *;
+
+footer {
+    padding: 20px 30px;
+    box-shadow: 0px 0px 20px 0px #bebebe;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 10px;
+    }
+
+    @include breakpoint($bp-smv) {
+        p {
+            font-size: 15px;
+        }
+    }
+}

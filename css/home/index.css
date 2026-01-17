@@ -1,0 +1,191 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -18px;
+}
+main .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  gap: 30px;
+  padding: 0px 10px;
+}
+main .introduction .home-image {
+  width: 90vw;
+  max-width: 500px;
+}
+main .introduction div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .introduction div h1 {
+  margin-top: -30px;
+  text-align: center;
+}
+main .courses, main .blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 30px;
+  width: 90vw;
+  margin-bottom: 9vh;
+}
+main .courses ul, main .blogs ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .courses ul li article, main .blogs ul li article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+  border-radius: 10px;
+}
+main .courses ul li article img, main .blogs ul li article img {
+  width: 250px;
+}
+main .courses ul li article h3, main .blogs ul li article h3 {
+  font-size: 16px;
+}
+main .courses ul li article p, main .blogs ul li article p {
+  font-size: 13px;
+}
+main .courses a, main .blogs a {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+main .courses a:hover, main .blogs a:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  main .introduction {
+    height: auto;
+    margin-bottom: 7vh;
+  }
+  main .introduction .home-image {
+    width: 85vw;
+  }
+  main .courses, main .blogs {
+    padding: 10px 40px;
+    gap: 30px;
+    width: 85vw;
+    margin-bottom: 9vh;
+  }
+  main .courses ul li article, main .blogs ul li article {
+    padding: 35px 50px;
+    border-radius: 10px;
+  }
+  main .courses ul li article img, main .blogs ul li article img {
+    width: 300px;
+  }
+  main .courses ul li article h3, main .blogs ul li article h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) {
+  main .introduction {
+    width: 80vw;
+  }
+  main .courses, main .blogs {
+    padding: 0px 50px;
+  }
+  main .courses ul, main .blogs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  main .courses ul li article, main .blogs ul li article {
+    padding: 25px 30px;
+    height: 320px;
+  }
+  main .courses ul li article img, main .blogs ul li article img {
+    width: 210px;
+  }
+  main .courses ul li article h3, main .blogs ul li article h3 {
+    font-size: 14px;
+  }
+  main .courses ul li article p, main .blogs ul li article p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    align-items: start;
+  }
+  main .introduction {
+    flex-direction: row-reverse;
+    width: auto;
+    height: 100vh;
+    gap: 50px;
+    padding: 0px 80px;
+  }
+  main .introduction div {
+    align-items: start;
+  }
+  main .courses, main .blogs {
+    width: 100%;
+    padding: 0px 50px;
+  }
+  main .courses ul, main .blogs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  main .courses, main .blogs {
+    padding: 0px 60px;
+  }
+  main .courses ul, main .blogs ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  main .introduction {
+    height: 100vh;
+    gap: 350px;
+    padding: 0px 100px;
+  }
+  main .introduction .home-image {
+    max-width: 700px;
+  }
+  main .introduction div {
+    width: 500px;
+  }
+  main .introduction div h1 {
+    text-align: center;
+  }
+  main .courses, main .blogs {
+    padding: 0px 100px;
+  }
+  main .courses ul li, main .blogs ul li {
+    height: 360px;
+  }
+  main .courses ul li img, main .blogs ul li img {
+    width: 280px;
+  }
+  main .courses ul li h3, main .blogs ul li h3 {
+    text-align: center;
+    width: 300px;
+    font-size: 17px;
+  }
+  main .courses ul li p, main .blogs ul li p {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

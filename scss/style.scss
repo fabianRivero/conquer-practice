@@ -1,0 +1,27 @@
+@use "home/index.scss";
+@use "header.scss";
+@use "footer.scss";
+@use "about/about.scss";
+@use "courses/courses.scss";
+@use "courses/course.scss";
+@use "blog/blog-menu.scss";
+@use "blog/blogs.scss";
+@use "registration/register.scss";
+@use "registration/login.scss";
+@use "contact/contact.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

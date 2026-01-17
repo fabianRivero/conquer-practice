@@ -1,0 +1,25 @@
+body {
+  background-color: #2B2D38;
+  font-family: "poppins", sans-serif;
+}
+body .elipses {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+body .elipses .ellipse2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+}
+body .elipses .ellipse1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+}
+
+/*# sourceMappingURL=body.css.map */

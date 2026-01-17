@@ -1,0 +1,125 @@
+.contact-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contact-body .contact {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: self-start;
+}
+.contact-body .contact .first {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-body .contact .directions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-body .contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-body .contact form .field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.contact-body .contact form .field input {
+  height: 25px;
+  font-size: 17px;
+}
+.contact-body .contact form .field input, .contact-body .contact form .field textarea {
+  border: 1px solid grey;
+}
+.contact-body .contact form .field input:focus, .contact-body .contact form .field textarea:focus {
+  outline: none;
+  border: 2px solid #5a5a5a;
+}
+.contact-body .contact form .field input:valid:not(:placeholder-shown), .contact-body .contact form .field textarea:valid:not(:placeholder-shown) {
+  border: 1px solid #4EE1A0;
+}
+.contact-body .contact form .field input:invalid:not(:placeholder-shown), .contact-body .contact form .field textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid #FF6F5B;
+  background-image: url("../icons/attention-sign.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
+}
+.contact-body .contact form .field:has(input:invalid:not(:placeholder-shown))::after {
+  content: "Formato incorrecto";
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  font-size: 12px;
+  color: #FF6F5B;
+}
+.contact-body .contact form .field select {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+}
+.contact-body .contact form .field select option:hover {
+  color: white;
+}
+.contact-body .contact form .field select:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
+}
+.contact-body .contact form button {
+  background-color: grey;
+  padding: 8px 13px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.contact-body .contact form button:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+}
+@media (min-width: 360px) {
+  .contact-body .contact {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 576px) {
+  .contact-body .contact {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 992px) {
+  .contact-body .contact {
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-body .contact form {
+    width: 60%;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-body .contact form {
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-body .contact form {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
